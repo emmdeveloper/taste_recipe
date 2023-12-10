@@ -8,7 +8,7 @@ const Catergory = ({
   type catergory = {
     display_name?: string;
     id?: number;
-    name?: string;
+    name?: string | undefined;
   };
   const [catergorys, setCatergorys] = useState<catergory[]>([]);
   useEffect(() => {

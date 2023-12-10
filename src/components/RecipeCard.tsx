@@ -1,6 +1,5 @@
-import { recipecard } from "../utils/types";
 import { Link } from "react-router-dom";
-const RecipeCard = ({ recipe }: recipecard) => {
+const RecipeCard = ({ recipe }) => {
   return (
     <Link to={`/recipe/${recipe.id}`}>
       <div className="p-5 shadow-lg rounded-lg hover:bg-[#8bc53f] transition-all hover:text-white hover:scale-110">

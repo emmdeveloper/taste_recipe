@@ -9,8 +9,8 @@ const SearchBar = ({ setRecipes }: recipe) => {
       `recipes/list?from=0&size=20&q=${search}`,
       RecipeTagsOptions
     );
-    const rData = recipesData.results;
-    const searchRecipe = rData.filter((recipe) =>
+    const rData = recipesData?.results;
+    const searchRecipe = rData?.filter((recipe) =>
       recipe.name.toLowerCase().includes(search)
     );
     setRecipes(searchRecipe);

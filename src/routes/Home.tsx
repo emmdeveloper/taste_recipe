@@ -4,10 +4,10 @@ import { fetchData, RecipeTagsOptions } from "../utils/fetchData";
 import Recipe from "../components/Recipe";
 import Navbar from "../components/Navbar";
 const Home = () => {
-  const [recipes, setRecipes] = useState<null>();
-  const [selectedCatergory, SetSelectedCatergory] = useState<string>(
-    "black_history_month"
-  );
+  const [recipes, setRecipes] = useState<null | undefined>();
+  const [selectedCatergory, SetSelectedCatergory] = useState<
+    string | [] | undefined
+  >("black_history_month");
   useEffect(() => {
     if (selectedCatergory) {
       const fetchTaggedFood = async () => {

@@ -1,5 +1,5 @@
-import SearchBar from "./SearchBar";
 import { recipe } from "../utils/types";
+import SearchBar from "./SearchBar";
 const Navbar = ({ setRecipes }: recipe) => {
   return (
     <nav className="flex flex-col  lg:justify-evenly items-center lg:flex-row ">
